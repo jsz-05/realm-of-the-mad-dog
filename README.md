@@ -7,7 +7,7 @@
 **Concept:** The game we designed and implemented is a roguelike, open-world game. The player starts in a an overworld where they can kill waves of mobs to gain experience and eventually fight the boss in the boss room. 
 
 ## Section 1: Gameplay
-The game starts off in an overworld, and game engine then periodically spawns waves of mobs, and the player will gain experience by killing these mobs (thus raising their statistics, like attack and health, to get stronger). The win condition is if the player clears all the waves, and defeats the boss in the boss room. The loss condition is if the player takes enough damage from the mobs to deplete their health bar. 
+The game starts off in an overworld, and game engine then periodically spawns waves of mobs, and the player will gain experience by killing these mobs (thus raising their statistics, like attack and health, to get stronger). The win condition is if the player clears all the waves, and defeats the boss in the boss room. The loss condition is if the player takes enough damage from the mobs or boss to deplete their health bar. 
 
 The player moves with the WASD keys, and uses the mouse pointer to aim. Right click activates melee (close range) attacks, and left click activates magic (long range) attacks. To spawn the boss room portal, the player must survive various waves in the overworld and gain enough XP by killing the zombie dogs. Be careful, as the zombie dogs are able to dodge your projectiles! The boss is stationary, but possesses a range of very dangerous attacks. Good luck! 
 
