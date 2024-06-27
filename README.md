@@ -1,6 +1,6 @@
 # Realm of the Mad Dog
 
-[https://jsz-05.github.io/ROTMD/](https://jsz-05.github.io/ROTMD/)
+[Click here to play the game!](https://jsz-05.github.io/ROTMD/)
 
 **Jeffrey Zhou, Ryan Lin, Jacob Chang**
 
