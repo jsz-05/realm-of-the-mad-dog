@@ -11,16 +11,16 @@ The player moves with the WASD keys, and uses the mouse pointer to aim. Right cl
 ## Section 2: Feature Set
 **Level 1 Features:**
 - Abstractions for entities in game: (Body is superclass of Enemy, Player, Projectiles, and Boss will be a subclass of Enemy, etc.)
-- Mouse/Key Handling (Controls): The player will move via arrows and attack via mouse aim/clicks. Jacob will develop the handlers for these things, and the collisions that allow for attacks. Jacob will also call the later-mentioned projectile handling in the case of ranged attacks for the player. 
+- Mouse/Key Handling (Controls): The player will move via arrows and attack via mouse aim/clicks. We will develop the handlers for these things, and the collisions that allow for attacks. We will also call the later-mentioned projectile handling in the case of ranged attacks for the player. 
 - Projectile Handling (bullets coming in contact, etc): Players and mobs will be able to shoot projectiles in some cases. This handling and separation will need to be implemented by porting over our existing physics engine and modifying it such that we are able to differentiate between our different types of projectiles. It will be helpful to look at the space_invaders demo from previous projects for differentiation projectiles. 
 
 **Level 2 Features:**
 - Enemy AI algorithm: Define a movement changing algorithm every tick - the enemies (unless they are bosses) should gravitate towards the player within a certain distance. We can also make some random motion in the enemies to make the game feel more natural. 
 - Enemy/Boss Attack Features: Each enemy should draw from a certain pool of attack actions, such as firing projectiles or coming into contact with the player. The boss can have multiple attack patterns (for example, a straight beam of projectiles or a ring of projectiles). The enemies should have pre-defined stats (attack, health, etc.). 
-- Player Attack Features: The player can either perform melee or projectile attacks depending on left or right click or different key presses (handled in Priority 1). It is Jacob's job to implement these potential attack patterns. 
+- Player Attack Features: The player can either perform melee or projectile attacks depending on left or right click or different key presses (handled in Priority 1). 
 
 **Level 3 Features:**
-- Scene Switching (Lobby, Overworld, Boss Room): The player will be able to rotate between the aforementioned three scenes, so Jacob will handle the switching and the background art for these. Beef up the current "scene" implementation such that it can handle this (i.e. cycle through background images). The player cycles through these scenes by going through "portals" on the map (these will have pre-defined coordinates, and be part of the scene image). 
+- Scene Switching (Lobby, Overworld, Boss Room): The player will be able to rotate between the aforementioned three scenes, so we will handle the switching and the background art for these. Beef up the current "scene" implementation such that it can handle this (i.e. cycle through background images). The player cycles through these scenes by going through "portals" on the map (these will have pre-defined coordinates, and be part of the scene image). 
 - Enemy Spawning: Enemies should spawn periodically on the edge of the map, trickling in as the game progresses. The boss should spawn after a certain number of enemies are killed by the player. 
 - Game Sprites: The reason we chose to put this feature at a lower priority is because we believe the core functionality of the game takes precedence. However, adding game sprites for the player and the mobs will give life to the game, and make it visually more enjoyable. 
 
